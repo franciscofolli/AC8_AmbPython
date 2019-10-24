@@ -20,6 +20,9 @@ def curs():
 
 #page detalhes dos cursos/faculdade
 @app.route('/detalhes')
+@app.route('/detalhes')
+def detalhes():
+    return render_template('detalhes.html')
 def detalhes():
     return render_template('detalhes.html')
 
