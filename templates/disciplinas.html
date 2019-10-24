@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Faculdade Futura</title>
+	<link rel = 'stylesheet' 					
+                type = 'text/css' href = '{{url_for("static", filename = "./estilogeral.css")}}' media = 'screen'> 
+
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"><img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a></li>
+				<li><a href="{{url_for('curs')}}">Cursos</a></li>
+				<li><a href="{{url_for('detalhes')}}">Detalhes</a></li>
+				<li><a href="{{url_for('disciplinas')}}">Disciplinas</a></li>
+				<li><a href="{{url_for('noticias')}}">Noticias</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="conteudo">
+		<div class="detalhes">
+			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-adm-laranja.png")}}' class="icon-cursos2">   ADMINISTRAÇÃO </h1>
+			<p class="titulo-padrao4"><br />GRADE CURRICULAR</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Semestre</th>
+						<th>Assuntos</th>
+						<th>Carga Horaria</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="6">1° Semestre</td>
+						<td>Comunicação e Expressão</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Fundamentos de Administração</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Macroeconomia</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Matemática Aplicada</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Modelos de Negócio e Empreendedorismo</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Pensamento Crítico e Ético</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6" class="cinza">2° Semestre</td>
+						<td class="cinza">Contabilidade Financeira</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Libras</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Microeconomia</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Raciocínio Analítico</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Sociedade e Politica</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Sociedade e Sustentabilidade</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6">3° Semestre</td>
+						<td>Comportamento Organizacional</td>
+						<td>40 horas</td>
+					</tr>
+					<tr>
+						<td>Contabilidade Gerencial</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Gestão de Projetos e Programas</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Inteligência de Negócios</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Matemática Financeira</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Nodelagem de Processos de Negócios</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6" class="cinza">4° Semestre</td>
+						<td class="cinza">Administração Financeira</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Estratégia Organizacional</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão de Marketing</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão de Operações</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão Estratégica de Pessoas</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="detalhes">
+			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-bd-laranja.png")}}'class="icon-cursos2"/>   BANCO DE DADOS</h1>
+			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Semestre</th>
+						<th>Assuntos</th>
+						<th>Carga Horaria</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="6">1° Semestre</td>
+						<td>Comunicação e Expressão</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Fundamentos de Administração</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Macroeconomia</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Matemática Aplicada</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Modelos de Negócio e Empreendedorismo</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Pensamento Crítico e Ético</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6" class="cinza">2° Semestre</td>
+						<td class="cinza">Contabilidade Financeira</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Libras</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Microeconomia</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Raciocínio Analítico</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Sociedade e Politica</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Sociedade e Sustentabilidade</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6">3° Semestre</td>
+						<td>Comportamento Organizacional</td>
+						<td>40 horas</td>
+					</tr>
+					<tr>
+						<td>Contabilidade Gerencial</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Gestão de Projetos e Programas</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Inteligência de Negócios</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Matemática Financeira</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Nodelagem de Processos de Negócios</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6" class="cinza">4° Semestre</td>
+						<td class="cinza">Administração Financeira</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Estratégia Organizacional</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão de Marketing</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão de Operações</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão Estratégica de Pessoas</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="detalhes">
+			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-si-laranja.png")}}' class="icon-cursos2"/>   SISTEMAS PARA INTERNET</h1>
+			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Semestre</th>
+						<th>Assuntos</th>
+						<th>Carga Horaria</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="6">1° Semestre</td>
+						<td>Comunicação e Expressão</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Fundamentos de Administração</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Macroeconomia</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Matemática Aplicada</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Modelos de Negócio e Empreendedorismo</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Pensamento Crítico e Ético</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6" class="cinza">2° Semestre</td>
+						<td class="cinza">Contabilidade Financeira</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Libras</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Microeconomia</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Raciocínio Analítico</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Sociedade e Politica</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Sociedade e Sustentabilidade</td>
+						<td class="cinza">40 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6">3° Semestre</td>
+						<td>Comportamento Organizacional</td>
+						<td>40 horas</td>
+					</tr>
+					<tr>
+						<td>Contabilidade Gerencial</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Gestão de Projetos e Programas</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Inteligência de Negócios</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Matemática Financeira</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td>Nodelagem de Processos de Negócios</td>
+						<td>80 horas</td>
+					</tr>
+					<tr>
+						<td rowspan="6" class="cinza">4° Semestre</td>
+						<td class="cinza">Administração Financeira</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Estratégia Organizacional</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão de Marketing</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão de Operações</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+					<tr>
+						<td class="cinza">Gestão Estratégica de Pessoas</td>
+						<td class="cinza">80 horas</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright © 2019 Lorem Ipsum Faculdade - Todos os direitos reservados</p>
+	</div>
+	
+</body>
+</html>
