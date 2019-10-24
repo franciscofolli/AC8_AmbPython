@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Faculdade Futura</title>
+	<link rel = 'stylesheet' 					
+                type = 'text/css' href = '{{url_for("static", filename = "./estilogeral.css")}}' media = 'screen'> 
+
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"><img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a></li>
+				<li><a href="{{url_for('curs')}}">Cursos</a></li>
+				<li><a href="{{url_for('detalhes')}}">Detalhes</a></li>
+				<li><a href="{{url_for('disciplinas')}}">Disciplinas</a></li>
+				<li><a href="{{url_for('noticias')}}">Noticias</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="conteudo">
+		<div class="detalhes">
+			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-adm-laranja.png")}}' class="icon-cursos2">   ADMINISTRAÇÃO </h1>
+			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
+			<p class="texto-padrao3">Tornar-se um líder. Ser um empreendedor. Fazer investimentos. 
+			Você tem inúmeras possibilidades na graduação em Administração da Faculdade Futura. <br />
+			O curso é voltado para as exigências do mercado de trabalho atual e aborda de forma ampla o universo corporativo. 
+			Você vai aprender a definir as melhores estratégias para o bom funcionamento das empresas, para gerar lucros, 
+			controlar gastos e se destacar com qualidade entre as concorrentes. <br />
+			Gerir equipes, negociar com fornecedores, solucionar diferentes problemas, atingir resultados positivos, 
+			aumentar a produtividade e aplicar novas tecnologias nas organizações também são funções do administrador.</p>
+			<p class="informacoes-padrao4"><br />Periodo: Matutino e Vespertino</p>
+			<p class="informacoes-padrao4"><br />Duração do Curso: 2 anos</p>
+			<p class="informacoes-padrao4"><br />Investimento: R$2000,00</p>
+		</div>
+		<div class="detalhes">
+			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-bd-laranja.png")}}' class="icon-cursos2"/>   Banco de Dados </h1>
+			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
+			<p class="texto-padrao3">O curso superior de tecnólogo em Banco de Dados tem conceito 4 na avaliação pelo MEC.<br />
+			Um estudo recente conduzido nos EUA mostra que Big Data Analytics vai gerar 10 milhões de oportunidades de trabalho 
+			em todo o mundo na próxima década, ou seja, as profissões na área de Big Data e Data Science são muito desafiadoras 
+			e com demanda crescente. Você já considerou construir sua carreira nessa área?<br />
+			O nosso curso torna o aluno apto a propor aplicações inteligentes e análise de Big Data para resolver desafios de negócios 
+			a partir dos grandes volumes de dados disponíveis, a fim de auxiliar nos aspectos decisórios administrativos, 
+			gerenciais e financeiros de uma empresa.<br />
+			O aluno desenvolve habilidade com técnicas estatísticas e mineração de dados, 
+			conhecimento de linguagem de programação com foco em aprendizado de máquina ou machine learning, 
+			experiência em trabalhar com grandes volumes de dados, assim como técnicas de modelagem de dados e administração 
+			e segurança dos dados.<br />
+			Entre as funções oferecidas no mercado, estão gerente de sistemas de banco de dados, desenvolvedor de projetos e 
+			consultor de banco de dados, analista de Business Intelligence, analista de dados, analista de Big Data, gerente de Analytics, 
+			engenheiro de dados, engenheiro de Big Data, gerente de segurança de dados, administrador de banco de dados e analista de 
+			sistemas de apoio à decisão. Essas são as carreiras com maior remuneração do mercado.</p>
+			<p class="informacoes-padrao4"><br />Periodo: Matutino e Vespertino</p>
+			<p class="informacoes-padrao4"><br />Duração do Curso: 2 anos</p>
+			<p class="informacoes-padrao4"><br />Investimento: R$1800,00</p>
+		</div>
+		<div class="detalhes">
+			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-si-laranja.png")}}' class="icon-cursos2"/>   Sistemas para Internet </h1>
+			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
+			<p class="texto-padrao3"><br />Pensar de uma forma digital não é mais uma tendência: é uma estratégia de inovação e 
+			de geração de negócios. O acesso à Internet banda larga aumentou 55% em 2015, totalizando 133,7 milhões de acessos, 
+			segundo a Telebrasil. Números que ampliam a importância de um tecnólogo não só voltado para a Internet, 
+			mas que também domine as novas tecnologias e metodologias que estão surgindo.<br />
+			Neste cenário, a palavra de ordem é: Transformação Digital. Ou Ampliar a interação entre cliente e empresa, 
+			repensando modelos de negócio com foco na experiência e na continuidade da relação humana, promovendo assim a integração entre 
+			os meios físico e digital.<br />
+			No primeiro ano, você já aprende a criar um e-commerce, utilizando os conceitos de UX, Design Pattern e Desenvolvimento 
+			WEB Responsivo. Já no segundo ano, o foco é no desenvolvimento de sistemas de portais corporativos e colaborativos por meio 
+			dos framework´s e linguagens mais utilizadas no mercado, apps mobile para as plataformas Android e iOS.</p>
+			<p class="informacoes-padrao4"><br />Duração do Curso: 2 anos</p>
+			<p class="informacoes-padrao4"><br />Periodo: Apenas Online</p>
+			<p class="informacoes-padrao4"><br />Investimento: R$1000,00</p>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright © 2019 Lorem Ipsum Faculdade - Todos os direitos reservados</p>
+	</div>
+</body>
+</html>
