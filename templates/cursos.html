@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Faculdade Futura</title>
+	<link rel="stylesheet" type="text/css" href="estilogeral.css" media="screen" />
+
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"> <img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cursos.html">Cursos</a></li>
+				<li><a href="detalhes.html">Detalhes</a></li>
+				<li><a href="disciplinas.html">Disciplinas</a></li>
+				<li><a href="noticias.html">Noticias</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="conteudo">
+		<h1 class="titulo-padrao">Nossos Cursos </h1>
+		<p class="texto-padrao">Há 30 anos no mercado, a Faculdade Futura tem alto nível de empregabilidade nas maiores empresas do País.
+		Segundo pesquisa realizada pelo LinkedIn, a Instituição possui cerca de 98,2% de contratações no segundo semestre do curso. Além disso,
+		nossa faculdade está trabalhando o projeto "Quanto menor, melhor!" com ajustes semestrais reduzidos de acordo com a média padrão universitária,
+		que, por sua vez, oscila entre 4% (minímo, de acordo com a lei 9780/99) e 12%. Trabalhamos visando o seu futuro, com a melhor qualidade de ensino brasileira!!</p>
+		<div id="cursos">
+			<h1 class="titulo-padrao2"> Administração </h1>
+			<p class="texto-padrao2"><br />Duração do Curso: 2 anos</p>
+			<p class="texto-padrao2"><br />Periodo: Matutino e Vespertino</p>
+			<p class="texto-padrao2"><br />Investimento: R$2000,00</p>
+			<p class="texto-padrao2"><br />Reajuste semestral: entre 4% a 7,25% (para o final do curso)</p>
+			<img src='{{url_for("static", filename = "img/"icon-adm.png")}}' class="icon-cursos"/>
+			<a href="detalhes.html"><img src='{{url_for("static", filename = "img/"botao-saiba-mais.png")}}' class="btn-saiba-mais"/></a>
+		</div>
+		<div id="cursos">
+			<h1 class="titulo-padrao2"> Banco de Dados </h1>
+			<p class="texto-padrao2"><br />Duração do Curso: 2 anos</p>
+			<p class="texto-padrao2"><br />Periodo: Matutino e Vespertino</p>
+			<p class="texto-padrao2"><br />Investimento: R$1800,00</p>
+			<p class="texto-padrao2"><br />Reajuste semestral: entre 4% a 6% (para o final do curso)</p>
+			<img src='{{url_for("static", filename = "img/"icon-bd.png")}}' class="icon-cursos"/>
+			<a href="detalhes.html"><img src='{{url_for("static", filename = "img/"botao-saiba-mais.png")}}' class="btn-saiba-mais"/></a>
+		</div>
+		<div id="cursos">
+			<h1 class="titulo-padrao2"> Sistemas para Internet </h1>
+			<p class="texto-padrao2"><br />Duração do Curso: 2 anos</p>
+			<p class="texto-padrao2"><br />Periodo: Apenas Online</p>
+			<p class="texto-padrao2"><br />Investimento: R$1000,00</p>
+			<p class="texto-padrao2"><br />Reajuste semestral: entre 4% a 8,5% (para o final do curso)</p>
+			<img src='{{url_for("static", filename = "img/"icon-si.png")}}' class="icon-cursos"/>
+			<a href="detalhes.html"><img src='{{url_for("static", filename = "img/"botao-saiba-mais.png")}}' class="btn-saiba-mais"/></a>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright © 2019 Lorem Ipsum Faculdade - Todos os direitos reservados</p>
+	</div>
+	<!--Página de curso (agora definitivo)-->
+	<!--Havia esquecido de dar referência ao CSS ;) -->
+</body>
+</html>
