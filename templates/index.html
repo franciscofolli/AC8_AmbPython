@@ -12,7 +12,7 @@
 <body>
 	<div id="header">
 		<div id="logo">
-			<a href="index.html"> <img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
+			<a href="{{url_for('index')}}"> <img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
 		</div>
 		<div id="menu">
 			<ul>
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div id="conteudo">
-		<a href="cursos.html"><img src= '{{url_for("static", filename = "img/fundo-principal.png")}}' class="fundo-principal"/></a>
+		<a href="{{url_for('curs')}}"><img src= '{{url_for("static", filename = "img/fundo-principal.png")}}' class="fundo-principal"/></a>
 		<h1 class="titulo-padrao"> RECONHECIMENTO </h1>
 		<p class="texto-padrao"> A Faculdade Futura é altamente reconhecida por sua atuação no mercado da educação, o que comprova o compromisso da Instituição com o ensino de qualidade e a dedicação do Grupo Futura em transformar a sociedade através da tecnologia. Desta maneira, ao longo dos anos a Faculdade Futura tem recebido prêmios e reconhecimentos que são resultados do trabalho contínuo de professores e funcionários e da determinação de seus alunos. </p>
 	</div>
