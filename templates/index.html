@@ -7,25 +7,25 @@
 	<meta charset="UTF-8"/>
 	<title>Faculdade Futura</title>	<!--Código de referência abaixo podem copiar para os outros html, por ser padrão-->
 	<link rel = 'stylesheet' 					
-                type = 'text/css' href = '{{url_for("static", filename = "./estilogeral.css")}}' media = 'screen'> 
+                type = 'text/css' href = "static/estilogeral.css" media = 'screen'> 
 </head>
 <body>
 	<div id="header">
 		<div id="logo">
-			<a href="{{url_for('index')}}"> <img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
+			<a href='/'> <img src = "static/img/logo_faculdade.png" class="logo"/></a>
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="{{url_for('index')}}">Home</a></li>
-				<li><a href="{{url_for('curs')}}">Cursos</a></li>
-				<li><a href="{{url_for('detalhes')}}">Detalhes</a></li>
-				<li><a href="{{url_for('disciplinas')}}">Disciplinas</a></li>
-				<li><a href="{{url_for('noticias')}}">Noticias</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="cursos">Cursos</a></li>
+				<li><a href="detalhes">Detalhes</a></li>
+				<li><a href="disciplinas">Disciplinas</a></li>
+				<li><a href="noticias">Noticias</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="conteudo">
-		<a href="{{url_for('curs')}}"><img src= '{{url_for("static", filename = "img/fundo-principal.png")}}' class="fundo-principal"/></a>
+		<a href="cursos"><img src= "staticimg/fundo-principal.png" class="fundo-principal"/></a>
 		<h1 class="titulo-padrao"> RECONHECIMENTO </h1>
 		<p class="texto-padrao"> A Faculdade Futura é altamente reconhecida por sua atuação no mercado da educação, o que comprova o compromisso da Instituição com o ensino de qualidade e a dedicação do Grupo Futura em transformar a sociedade através da tecnologia. Desta maneira, ao longo dos anos a Faculdade Futura tem recebido prêmios e reconhecimentos que são resultados do trabalho contínuo de professores e funcionários e da determinação de seus alunos. </p>
 	</div>
