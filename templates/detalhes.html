@@ -5,27 +5,27 @@
 	<meta charset="UTF-8"/>
 	<title>Faculdade Futura</title>
 	<link rel = 'stylesheet' 					
-                type = 'text/css' href = '{{url_for("static", filename = "./estilogeral.css")}}' media = 'screen'> 
+                type = 'text/css' href = "static/estilogeral.css" media = 'screen'> 
 
 </head>
 <body>
 	<div id="header">
 		<div id="logo">
-			<a href="{{url_for('curs')}}"><img src = '{{url_for("static", filename = "img/logo_faculdade.png")}}' class="logo"/></a>
+			<a href='/'> <img src = "static/img/logo_faculdade.png" class="logo"/></a>
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="{{url_for('index')}}">Home</a></li>
-				<li><a href="{{url_for('curs')}}">Cursos</a></li>
-				<li><a href="{{url_for('detalhes')}}">Detalhes</a></li>
-				<li><a href="{{url_for('disciplinas')}}">Disciplinas</a></li>
-				<li><a href="{{url_for('noticias')}}">Noticias</a></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="cursos">Cursos</a></li>
+				<li><a href="detalhes">Detalhes</a></li>
+				<li><a href="disciplinas">Disciplinas</a></li>
+				<li><a href="noticias">Noticias</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="conteudo">
 		<div class="detalhes">
-			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-adm-laranja.png")}}' class="icon-cursos2">   ADMINISTRAÇÃO </h1>
+			<h1 class="titulo-padrao3"><img src = "static/img/icone-adm-laranja.png" class="icon-cursos2">   ADMINISTRAÇÃO </h1>
 			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
 			<p class="texto-padrao3">Tornar-se um líder. Ser um empreendedor. Fazer investimentos. 
 			Você tem inúmeras possibilidades na graduação em Administração da Faculdade Futura. <br />
@@ -39,7 +39,7 @@
 			<p class="informacoes-padrao4"><br />Investimento: R$2000,00</p>
 		</div>
 		<div class="detalhes">
-			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-bd-laranja.png")}}' class="icon-cursos2"/>   Banco de Dados </h1>
+			<h1 class="titulo-padrao3"><img src = "static/img/icone-bd-laranja.png" class="icon-cursos2"/>   Banco de Dados </h1>
 			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
 			<p class="texto-padrao3">O curso superior de tecnólogo em Banco de Dados tem conceito 4 na avaliação pelo MEC.<br />
 			Um estudo recente conduzido nos EUA mostra que Big Data Analytics vai gerar 10 milhões de oportunidades de trabalho 
@@ -61,7 +61,7 @@
 			<p class="informacoes-padrao4"><br />Investimento: R$1800,00</p>
 		</div>
 		<div class="detalhes">
-			<h1 class="titulo-padrao3"><img src = '{{url_for("static", filename = "img/icone-si-laranja.png")}}' class="icon-cursos2"/>   Sistemas para Internet </h1>
+			<h1 class="titulo-padrao3"><img src = "static/img/icone-si-laranja.png" class="icon-cursos2"/>   Sistemas para Internet </h1>
 			<p class="titulo-padrao4"><br />SOBRE O CURSO</p>
 			<p class="texto-padrao3"><br />Pensar de uma forma digital não é mais uma tendência: é uma estratégia de inovação e 
 			de geração de negócios. O acesso à Internet banda larga aumentou 55% em 2015, totalizando 133,7 milhões de acessos, 
