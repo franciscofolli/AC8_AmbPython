@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html>
-									<!--Referencia para imagens de aqueles que estão na mesma pasta do html
-					usar o comando '{{url_for("static", filename = "img/<nome da img>")}}' na mesma
-										estrutura que a linha 15 do index.html'-->
+
 <head>
-	<meta charset="UTF-8"/>
-	<title>Faculdade Futura</title>	<!--Código de referência abaixo podem copiar para os outros html, por ser padrão-->
-	<link rel = 'stylesheet' 					
-                type = 'text/css' href = "static/estilogeral.css" media = 'screen'> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        var myHeaders = new Headers();
+		myHeaders.append("XToken", "1234567890");
+		myHeaders.append("Authorization", "Basic ZmFiaW8uZGVzazphYmMxMjM=");
+		myHeaders.append("Origin", "http://192.168.15.133:5000/");
+		
+		var raw = JSON.stringify({"user":"fabio.florenco@dfssistemas.com.br","password":"102030"});
+		
+		var requestOptions = {
+		method: 'POST',
+		headers: myHeaders,
+		body: raw,
+		mode: 'cors',
+		redirect: 'follow'
+		};
+		
+		fetch("http://192.168.15.251:8866/rest/appticketdfs/v1/user", requestOptions)
+		.then(response => response.text())
+		.then(result => console.log(result))
+	  	.catch(error => console.log('error', error));
+    </script>
+
 </head>
+
 <body>
-	<div id="header">
-		<div id="logo">
-			<a href='/'> <img src = "static/img/logo_faculdade.png" class="logo"/></a>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="cursos">Cursos</a></li>
-				<li><a href="detalhes">Detalhes</a></li>
-				<li><a href="disciplinas">Disciplinas</a></li>
-				<li><a href="noticias">Noticias</a></li>
-			</ul>
-		</div>
-	</div>
-	<div id="conteudo">
-		<a href="cursos"><img src= "static/img/fundo-principal.png" class="fundo-principal"/></a>
-		<h1 class="titulo-padrao"> RECONHECIMENTO </h1>
-		<p class="texto-padrao"> A Faculdade Futura é altamente reconhecida por sua atuação no mercado da educação, o que comprova o compromisso da Instituição com o ensino de qualidade e a dedicação do Grupo Futura em transformar a sociedade através da tecnologia. Desta maneira, ao longo dos anos a Faculdade Futura tem recebido prêmios e reconhecimentos que são resultados do trabalho contínuo de professores e funcionários e da determinação de seus alunos. </p>
-	</div>
-	<div id="footer">
-		<p>Copyright © 2019 Lorem Ipsum Faculdade - Todos os direitos reservados</p>
-	</div>
+    <form id="formId">
+        <table>           
+            <tr> 
+                <td>E-mail do usuário:</td>
+                <td><input type="text" size=100 name="user" id="user" value=""/></td>
+            </tr>
+            <tr> 
+                <td>Senha:</td>
+                <td><input type="text" size=100 name="password" id="password" value=""/></td>
+            </tr>
+			
+            <tr><td><input type="submit" value="Submit" /></td></tr>
+        </table>
+    </form>
+
 </body>
+
+
+
 </html>
